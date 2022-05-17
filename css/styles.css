@@ -41,8 +41,8 @@ html {
 
 .header {
   border-bottom: 1px solid var(--background-team-color);
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -57,9 +57,7 @@ html {
 }
 
 .container {
-  /* display: inline-flexbox;
-  justify-content: center; */
-
+  
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -209,13 +207,25 @@ html {
 .hero {
   background: #2f303a;
   text-align: center;
-  background-image: url(../images/img7\ \(1\).jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
   background-size: cover;
   background-position: 100%;
   width: auto;
   height: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: url(../images/overlay.jpg) ;
+  background: repeat;
+  background-position: center;
+  background-size: cover ;
 }
 
 .hero-text {
@@ -433,7 +443,7 @@ html {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.list-footer .item-link:not(:last-child) {
+.item-link:not(:last-child) {
   margin-bottom: 9px;
 }
 
