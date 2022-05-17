@@ -41,8 +41,6 @@ html {
 
 .header {
   border-bottom: 1px solid var(--background-team-color);
-  /* padding-left: 20px;
-  padding-right: 20px; */
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -57,7 +55,6 @@ html {
 }
 
 .container {
-  
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -184,10 +181,10 @@ html {
 }
 
 .btn {
- padding-top: 6px;
- padding-bottom: 6px;
- padding-right: 22px;
- padding-left: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
   border: 0;
   font-family: inherit;
   font-weight: 500;
@@ -207,7 +204,8 @@ html {
 .hero {
   background: #2f303a;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+    url(../images/overlay.jpg);
   background-size: cover;
   background-position: 100%;
   width: auto;
@@ -222,10 +220,13 @@ html {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
-  background-image: url(../images/overlay.jpg) ;
+  background-image: linear-gradient(
+      to right rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.jpg);
   background: repeat;
   background-position: center;
-  background-size: cover ;
+  background-size: cover;
 }
 
 .hero-text {
@@ -261,7 +262,6 @@ html {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
 }
 
 .section-first {
@@ -300,6 +300,53 @@ html {
   width: 270px;
 }
 
+.section-item::before {
+  content: "";
+  display: block;
+  outline: 1px solid red;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+}
+
+.section-item:nth-child(1)::before {
+  background-image: url(../images/antenna\ 1.png);
+ 
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.section-item:nth-child(2)::before {
+  background-image: url(../images/clock\ 1.png);
+  
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.section-item:nth-child(3)::before {
+  background-image: url(../images/diagram\ 1.png);
+  
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.section-item:nth-child(4)::before {
+  background-image: url(../images/astronaut\ 1.png);
+ 
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .section-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -395,12 +442,6 @@ html {
   color: var(--color-title);
 }
 
-/* .card-thumb {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
-  } */
-
 /**********************подвал страницы********************/
 
 .footer-bg {
@@ -420,7 +461,6 @@ html {
 
 .list-footer {
   margin: 0;
-  
 }
 
 .adress,
@@ -477,7 +517,6 @@ html {
   display: inline-block;
   cursor: pointer;
   border-radius: 4px;
-
 }
 
 .button:not(:last-child) {
@@ -535,7 +574,7 @@ html {
 
 .card-content {
   background: #ffffff;
-  
+
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
