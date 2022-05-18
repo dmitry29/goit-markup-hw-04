@@ -201,15 +201,20 @@ html {
 
 /*********************блок герой********************/
 
-.hero {
+ .hero {
+   max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
   background: #2f303a;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+  background-image:
     url(../images/overlay.jpg);
   background-size: cover;
   background-position: 100%;
-  width: auto;
-  height: auto;
+   width: auto;
+  height: auto; 
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -220,13 +225,18 @@ html {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
-  background-image: linear-gradient(
-      to right rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)
-    ),
+  background-image:
+   linear-gradient(to right 
+      rgba(47, 48, 58, 0.4) 
+      rgba(47, 48, 58, 0.4)),
     url(../images/overlay.jpg);
-  background: repeat;
+  background:no-repeat;
   background-position: center;
   background-size: cover;
+
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -313,8 +323,7 @@ html {
 }
 
 .section-item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.png);
- 
+  background-image: url(../images/antenna\ 1.svg);
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 25px;
@@ -322,8 +331,7 @@ html {
 }
 
 .section-item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.png);
-  
+  background-image: url(../images/clock\ 1.svg);
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 25px;
@@ -331,8 +339,7 @@ html {
 }
 
 .section-item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.png);
-  
+  background-image: url(../images/diagram\ 1.svg);
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 25px;
@@ -340,8 +347,7 @@ html {
 }
 
 .section-item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.png);
- 
+  background-image: url(../images/astronaut\ 1.svg);
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 25px;
@@ -440,6 +446,26 @@ html {
   line-height: 1.19;
   text-align: center;
   color: var(--color-title);
+}
+
+
+/*****************Наши клиенты**********************/
+.clients {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  padding-left: 0px;
+}
+
+.clients > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-client {
+  background-color: var(--hero-text-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /**********************подвал страницы********************/
