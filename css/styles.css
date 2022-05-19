@@ -28,6 +28,7 @@ p {
 }
 
 a {
+  display: inline-flex;
   text-decoration: var(--text-decoration);
 }
 
@@ -111,7 +112,7 @@ html {
   color: black;
 }
 
-/* кнопки навигации */
+/***************** кнопки навигации ******************/
 .auth-nav > .site-nav-link:not(:last-child) {
   margin-left: 50px;
 }
@@ -157,14 +158,28 @@ html {
   padding-bottom: 0;
 }
 
+.auth-nav .site-nav-link::before {
+  content: "";
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--hero-text-color);
+}
+
+.svg-mail,
+.svg-phone {
+  margin-right: 10px;
+}
+
 .link:hover,
 .link:focus,
-.auth-nav .list:hover,
-.auth-nav .list:focus {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
   color: var(--color-accent);
 }
 
-/******************блок навигации***************/
+/************************блок навигации***********************/
 
 .nav-link-current {
   font-weight: 500;
@@ -201,40 +216,24 @@ html {
 
 /*********************блок герой********************/
 
- .hero {
-   max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid red;
-  background: #2f303a;
-  text-align: center;
-  background-image:
-    url(../images/overlay.jpg);
-  background-size: cover;
-  background-position: 100%;
-   width: auto;
-  height: auto; 
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.overlay {
+.hero {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
-  background-image:
-   linear-gradient(to right 
-      rgba(47, 48, 58, 0.4) 
-      rgba(47, 48, 58, 0.4)),
-    url(../images/overlay.jpg);
-  background:no-repeat;
-  background-position: center;
-  background-size: cover;
-
+  background: #2f303a;
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.jpg);
+  background-size: cover;
+  background-position: 100%;
+  width: auto;
+  height: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -310,49 +309,22 @@ html {
   width: 270px;
 }
 
-.section-item::before {
+.icon {
   content: "";
   display: block;
-  outline: 1px solid red;
   height: 120px;
+  /* outline: 1px solid red; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
 }
 
-.section-item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.svg);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.section-item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.svg);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.section-item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.svg);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.section-item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.svg);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
 .section-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -448,6 +420,38 @@ html {
   color: var(--color-title);
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.social-link {
+  padding: 12px;
+  /* outline: 1px solid red; */
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-accent);
+  color: #AFB1B8;
+}
+
+.svg-link:hover,
+.svg-link:focus {
+fill: var(--hero-text-color);
+color:#ffffff;
+} 
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
 
 /*****************Наши клиенты**********************/
 .clients {
@@ -458,7 +462,23 @@ html {
   padding-left: 0px;
 }
 
-.clients > li:not(:last-child) {
+.client {
+  width: 170px;
+  height: 92px;
+  outline: 1px solid #AFB1B8;
+  padding: 16px 32px;
+  border-radius: 4px; 
+}
+
+
+.clients:hover,
+.clients:focus,
+.client:hover,
+.client:focus {
+  color: #2196f3;
+}
+
+.client:not(:last-child) {
   margin-right: 30px;
 }
 
