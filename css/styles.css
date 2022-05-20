@@ -28,7 +28,7 @@ p {
 }
 
 a {
-  display: inline-flex;
+  /* display: inline-flex; */
   text-decoration: var(--text-decoration);
 }
 
@@ -423,8 +423,9 @@ html {
 .social-links {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
+  margin: 0;
   padding: 0;
+
 }
 
 .social-link {
@@ -435,6 +436,7 @@ html {
   border-radius: 50%;
   background-size: contain;
   background-position: center;
+  
 }
 
 .social-link:hover,
@@ -543,17 +545,20 @@ html {
   margin-bottom: 20px;
 }
 
-.title-f {
+ .title-f {
+   display: inline-block;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-.card-content-f {
+  margin: 0;
+  padding: 0;
+} 
+ .card-content-f {
   display: block;
   
-}
+} 
 
 
 /**********************портфолио*******************/
@@ -636,6 +641,10 @@ html {
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: 
+  0px 1px 3px rgba(0, 0, 0, 0.12), 
+  0px 1px 1px rgba(0, 0, 0, 0.14), 
+  0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card-content .text {
@@ -649,4 +658,5 @@ html {
 .text-team {
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
