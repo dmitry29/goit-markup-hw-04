@@ -55,6 +55,12 @@ html {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -114,7 +120,7 @@ html {
 
 /***************** кнопки навигации ******************/
 .auth-nav > .site-nav-link:not(:last-child) {
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .site-nav > .site-nav-link:not(:last-child) {
@@ -132,7 +138,7 @@ html {
 
 .auth-nav {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   color: var(--color-text);
   margin-left: auto;
   margin-top: 0;
@@ -158,6 +164,11 @@ html {
   padding-bottom: 0;
 }
 
+.auth-nav .link {
+  display: flex;
+  align-items: center;
+}
+
 .auth-nav .site-nav-link::before {
   content: "";
   display: block;
@@ -170,6 +181,7 @@ html {
 .svg-mail,
 .svg-phone {
   margin-right: 10px;
+  fill:currentColor;
 }
 
 .link:hover,
@@ -428,30 +440,38 @@ html {
 
 }
 
+.button-icon {
+  color: #ffffff;
+}
+
 .social-link {
-  padding: 12px;
-  /* outline: 1px solid red; */
-  width: 44px;
-  height: 44px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background-size: contain;
-  background-position: center;
+ color: #AFB1B8;
   
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--color-accent);
-  color: #afb1b8;
-}
-
-.svg-link:hover,
-.svg-link:focus {
-  fill: var(--hero-text-color);
   color: #ffffff;
 }
 
-.social-link:not(:last-child) {
+.svg-link {
+  fill: currentColor;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -492,13 +512,33 @@ html {
 /**********************подвал страницы********************/
 
 .footer-bg {
-  display: flex;
   background-color: var(--background-footer);
   padding-top: 60px;
   padding-bottom: 60px;
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-box {
+  margin-right: 70px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
 
 .footer-bg,
 .adress,
