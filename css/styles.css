@@ -28,7 +28,6 @@ p {
 }
 
 a {
-  /* display: inline-flex; */
   text-decoration: var(--text-decoration);
 }
 
@@ -138,7 +137,6 @@ img {
 
 .auth-nav {
   display: flex;
-  /* flex-direction: row-reverse; */
   color: var(--color-text);
   margin-left: auto;
   margin-top: 0;
@@ -181,7 +179,7 @@ img {
 .svg-mail,
 .svg-phone {
   margin-right: 10px;
-  fill:currentColor;
+  fill: currentColor;
 }
 
 .link:hover,
@@ -438,27 +436,22 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 20px;
-
 }
 
 .button-icon {
-  color: #ffffff;
+  fill: #ffffff;
 }
 
 .social-link {
-  
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   width: 100%;
   height: 100%;
   border-radius: 50%;
- color: #AFB1B8;
-  
+  color: #afb1b8;
 }
-
-
 
 .svg-link {
   fill: currentColor;
@@ -478,8 +471,7 @@ img {
 
 .social-item:hover,
 .social-item:focus {
-background-color: #2196f3;
-
+  background-color: #2196f3;
 }
 
 .social-item:not(:last-child) {
@@ -496,21 +488,37 @@ background-color: #2196f3;
 }
 
 .client {
-  display: inline-block;
   width: 170px;
   height: 92px;
-  outline: 1px solid #afb1b8;
-  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  max-width: 100%;
+  padding: 0;
   border-radius: 4px;
-  
 }
 
+.client-link {
+  fill: #afb1b8; 
+  /* max-width: 100%;
+  max-height: 100%; */
+}
+
+.client a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 .client-link:hover,
-.client-link:focus, 
+.client-link:focus,
 .client:hover,
 .client:focus {
-  color: #2196f3;
-} 
+  fill: #2196f3;
+}
+
+
+
 
 .client:not(:last-child) {
   margin-right: 30px;
@@ -550,8 +558,6 @@ background-color: #2196f3;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-
-
 
 .footer-bg,
 .adress,
@@ -598,8 +604,8 @@ background-color: #2196f3;
   margin-bottom: 20px;
 }
 
- .title-f {
-   display: inline-block;
+.title-f {
+  display: inline-block;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -607,12 +613,10 @@ background-color: #2196f3;
   color: #ffffff;
   margin: 0;
   padding: 0;
-} 
- .card-content-f {
+}
+.card-content-f {
   display: block;
-  
-} 
-
+}
 
 /**********************портфолио*******************/
 .projects.filter {
@@ -694,10 +698,8 @@ background-color: #2196f3;
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
-  box-shadow: 
-  0px 1px 3px rgba(0, 0, 0, 0.12), 
-  0px 1px 1px rgba(0, 0, 0, 0.14), 
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card-content .text {
