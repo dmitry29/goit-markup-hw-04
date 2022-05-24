@@ -433,7 +433,7 @@ img {
   justify-content: center;
   margin: 0;
   padding: 0;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .footer-social-link {
@@ -606,8 +606,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 .card-content-f {
   display: block;
@@ -701,8 +703,8 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
 }
 
 .card-content .text {
